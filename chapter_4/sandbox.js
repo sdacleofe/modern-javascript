@@ -1,9 +1,8 @@
 // arguments & parameters
 
-const speak = function(name = 'luigi', time = 'night'){
-  console.log(`good ${time}, ${name}!`);
-};
+const speak = function (name = 'jarvis', time = 'night') {
+  console.log(`Good ${time} ${name}`)
+}
 
-// speak('mario', 'morning');
-// speak();
-speak('shaun');
+speak()
+speak('shanice', 'morning')
