@@ -6,20 +6,19 @@ let user = {
   email: 'crystal@thenetninja.co.uk',
   location: 'berlin',
   blogs: ['why mac & cheese rules', '10 things to make with marmite'],
-  login: function(){
-    console.log('the user logged in');
+  login: function () {
+    console.log('the user logged in')
   },
-  logout: function(){
-    console.log('the user logged out');
+  logout: function () {
+    console.log('the user logged out')
   },
-  logBlogs: function(){
-    // access the blogs here
+  logBlogs: function () {
+    
   }
-};
+}
 
-user.login();
-user.logout();
+user.login()
+user.logout()
 
-const name = 'shaun';
-name.toUpperCase();
-
+const name = 'mario'
+name.toUpperCase()
