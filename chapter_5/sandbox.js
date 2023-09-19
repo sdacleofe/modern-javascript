@@ -1,9 +1,9 @@
 // const blogs = [
-//   {title: 'why mac & cheese rules', likes: 30},
-//   {title: '10 things to make with marmite', likes: 50}
+//   { title: 'why mac & cheese rules', likes: 30 },
+//   { title: '1- things to make with marmites', likes: 50 },
 // ];
 
-// console.log(blogs[0].title);
+// console.log(blogs)
 
 let user = {
   name: 'crystal',
@@ -11,24 +11,24 @@ let user = {
   email: 'crystal@thenetninja.co.uk',
   location: 'berlin',
   blogs: [
-    {title: 'why mac & cheese rules', likes: 30},
-    {title: '10 things to make with marmite', likes: 50}
+    { title: 'why mac & cheese rules', likes: 30 },
+    { title: '10 things to make with marmite', likes: 50 },
   ],
-  login(){
-    console.log('the user logged in');
+  login() {
+    console.log('the user logged in')
   },
-  logout(){
-    console.log('the user logged out');
+  logout() {
+    console.log('the user logged out')
   },
-  logBlogs(){
+  logBlogs() {
     // access the blogs here
     // console.log(this);
-    console.log('this user has written these blogs:');
-    this.blogs.forEach(blog => {
-      console.log(`${blog.title} has ${blog.likes} likes`);
+    console.log('this user has written these blogs:')
+    this.blogs.forEach((blog) => {
+      console.log(`${blog.title} has ${blog.likes} likes`)
     })
-  }
-};
+  },
+}
 
 // console.log(this);
-user.logBlogs();
+user.logBlogs()
