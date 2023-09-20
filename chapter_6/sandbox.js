@@ -1,24 +1,23 @@
-const para = document.querySelector('p');
+const para = document.querySelector('p')
 
-// console.log(para.innerText);
-// para.innerText = 'ninjas are awesome';
+console.log(para.innerText)
+para.innerText = 'ninjas are awesome'
+console.log(para.innerText)
 
-const paras = document.querySelectorAll('p');
+const paras = document.querySelectorAll('p')
 
-// paras.forEach(p => {
-//   console.log(p.innerText);
-//   p.innerText = 'new text!';
-// });
+paras.forEach((para) => {
+  console.log(para.innerText)
+  para.innerText += ' new text'
+})
 
-const content = document.querySelector('.content');
+const content = document.querySelector('.content')
 
-// console.log(content.innerHTML);
-// content.innerHTML = '<h2>this is a new h2</h2>';
+console.log(content.innerHTML)
+content.innerHTML += '<h2> this is a new h2 </h2>'
 
-// content.innerHTML += '<h2>this is an h2 added to the content</h2>';
+const people = ['mario', 'luigi', 'yoshi']
 
-const people = ['mario', 'luigi', 'yoshi'];
-
-people.forEach(person => {
-  content.innerHTML += `<p>${person}</p>`;
-});
+people.forEach((person) => {
+  content.innerHTML += `<p>${person}</p>`
+})
