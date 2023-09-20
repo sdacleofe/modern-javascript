@@ -1,15 +1,19 @@
-const form = document.querySelector('.signup-form');
-const feedback = document.querySelector('.feedback');
+const form = document.querySelector('.signup-form')
+const feedback = document.querySelector('.feedback')
 
-form.addEventListener('submit', e => {
-  e.preventDefault();
-  
-  const username =  form.username.value;
-  const usernamePattern = /^[a-zA-Z]{6,12}$/;
+form.addEventListener('submit', (e) => {
+  e.preventDefault()
 
-  if(usernamePattern.test(username)){
-    feedback.textContent = 'that username is valid!'
+  // validation
+  const username = form.username.value
+  const usernamePattern = /^[a-zA-Z]{6,12}$/
+
+  if (usernamePattern.test(username)) {
+    // feedback good info
+    feedback.textContent = 'that username is valid'
   } else {
-    feedback.textContent = 'username must contain only letters & be between 6 & 12 characters';
+    // feedback help info
+    feedback.textContent =
+      'username must contain letters only and be between 6 and 12 characters long'
   }
-});
+})
