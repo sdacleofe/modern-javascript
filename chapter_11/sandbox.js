@@ -19,7 +19,7 @@ console.log(`the blog was written ${days} days ago`)
 // converting timestamps into date objects
 const timestamp = 1675938474990
 console.log(new Date(timestamp))
-
+console.log(new Date(now))
 
 // //const before = new Date('02/01/2019 7:30:59');
 // const before = new Date('February 1 2019 7:30:59');
