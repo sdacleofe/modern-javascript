@@ -1,9 +1,10 @@
-console.log(1);
-console.log(2);
+console.log(1)
+console.log(2)
 
+// this is asynchronous code in action
 setTimeout(() => {
-  console.log('callback function fired');
-}, 2000);
+  console.log('callback function fired')
+}, 2000)
 
-console.log(3);
-console.log(4);
+console.log(3)
+console.log(4)
