@@ -3,19 +3,21 @@ function User(username, email){
   this.email = email;
 }
 
-User.prototype.login = function(){
-  console.log(`${this.username} has logged in`);
-  return this;
-};
+User.prototype.login = function() {
+  console.log(`${this.username} has logged in `)
+  return this
+}
 
-User.prototype.logout = function(){
-  console.log(`${this.username} has logged out`);
-  return this;
-};
+User.prototype.logout = function() {
+  console.log(`${this.username} has logged out `)
+  return this
+
+}
 
 const userOne = new User('ryu', 'ryu@thenetninja.co.uk');
 const userTwo = new User('chun-li', 'chun.li@thenetninja.co.uk');
 
-console.log(userOne);
+console.log(userOne, userTwo)
 
-userOne.login().logout();
+userOne.login().logout()
+userOne.logout()
