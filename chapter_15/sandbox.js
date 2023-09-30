@@ -1,26 +1,30 @@
 const userOne = {
   username: 'ryu',
-  email: 'ryu@thenetninja.co.uk',
-  login(){
-    console.log('the user logged in');
+  email: 'ryu@gmail.com',
+  login() {
+    console.log('the user logged in')
   },
-  logout(){
-    console.log('the user logged out');
+  logout() {
+    console.log('the user logged out')
   }
-};
+}
 
-console.log(userOne.email, userOne.username);
-userOne.login();
+console.log(userOne.email, userOne.username)
+userOne.login()
 
 const userTwo = {
-  username: 'chun-li',
-  email: 'chun.li@thenetninja.co.uk',
-  login(){
-    console.log('the user logged in');
+  username: 'chun li',
+  email: 'chun.li@gmail.com',
+  login() {
+    console.log('the user logged in')
   },
-  logout(){
-    console.log('the user logged out');
+  logout() {
+    console.log('the user logged out')
   }
-};
+}
 
-// const userThree = new User('shaun', 'shaun@thenetninja.co.uk');
+console.log(userTwo.email, userTwo.username)
+userOne.login()
+
+const userThree = new User('shaun@gmail.com', 'shaun')
+//sandbox.js:29 Uncaught ReferenceError: User is not defined at sandbox.js:29:19
