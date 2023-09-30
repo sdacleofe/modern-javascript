@@ -13,19 +13,21 @@ User.prototype.logout = function(){
   return this;
 };
 
-// admin
-function Admin(username, email){
-  User.call(this, username, email);
+function Admin(username, email, title) {
+  User.call(this, username, email)
+  this.title = title
 }
 
-Admin.prototype = Object.create(User.prototype);
+Admin.prototype = Object.create(User.prototype)
 
-Admin.prototype.deleteUser = function(user){
-  // delete the user
-};
+Admin.prototype.deleteUser = function() {
+  // delete user
+  console.log(`${this.username} has been deleted.`)
+}
 
 const userOne = new User('ryu', 'ryu@thenetninja.co.uk');
 const userTwo = new User('chun-li', 'chun.li@thenetninja.co.uk');
-const userThree = new Admin('shaun', 'shaun@thenetninja.co.uk');
+const userThree = new Admin('shaun', 'shaun@gmail.com', 'black-belt-ninja')
 
-console.log(userThree);
+console.log(userThree)
+userThree.deleteUser()
